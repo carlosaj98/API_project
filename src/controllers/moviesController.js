@@ -1,6 +1,6 @@
 const Movie = require("../models/movie")
 const Category = require('../models/category')
-const User = require('../models/user')
+
 
 const getAll = async (req, res) => {
 	const movies = await Movie.find()
