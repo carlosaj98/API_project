@@ -7,5 +7,6 @@ module.exports = function (app) {
 	app.use(morgan('tiny'))
 
 	app.use('/api/users', require('../routes/usersRoutes'))
+	app.use('/api/categories', require('../routes/categoriesRoutes'))
 
 }
