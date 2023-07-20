@@ -7,7 +7,7 @@ const movieSchema = new mongoose.Schema({
     description: { type: String, required: true},
     category: {type: ObjectId, ref: "Category", required: true},
     votes: [{type: ObjectId, ref: "User"}],
-    score: Number
+    score: {type: Number, min: 0, max: 10, default: 0}
 })
 
 const Movie = mongoose.model('Movie', movieSchema)
