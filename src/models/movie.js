@@ -10,6 +10,8 @@ const movieSchema = new mongoose.Schema({
     score: {type: Number, min: 0, max: 10, default: 0}
 })
 
+
+
 const Movie = mongoose.model('Movie', movieSchema)
 
 module.exports = Movie
