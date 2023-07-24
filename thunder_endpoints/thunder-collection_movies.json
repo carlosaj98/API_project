@@ -1,0 +1,99 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "movies",
+    "dateExported": "2023-07-24T17:58:59.280Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "9894b169-8cb3-445b-ba12-8a8284121804",
+            "colId": "f08fbb11-d531-4a34-8adc-28425fa35f29",
+            "containerId": "",
+            "name": "AllMovies",
+            "url": "localhost:9000/api/movies/",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-07-20T09:14:37.498Z",
+            "modified": "2023-07-20T09:15:04.802Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "d61debae-37c8-4034-9239-0b1577681bdd",
+            "colId": "f08fbb11-d531-4a34-8adc-28425fa35f29",
+            "containerId": "",
+            "name": "OneMovie",
+            "url": "localhost:9000/api/movies/64b90751f2895db497d404c3",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2023-07-20T09:15:19.816Z",
+            "modified": "2023-07-20T10:34:37.352Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "3e42fd08-24ba-42a1-a0b2-52e43f8486d0",
+            "colId": "f08fbb11-d531-4a34-8adc-28425fa35f29",
+            "containerId": "",
+            "name": "CreateMovie",
+            "url": "localhost:9000/api/movies/",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2023-07-20T09:15:59.349Z",
+            "modified": "2023-07-24T17:22:22.412Z",
+            "headers": [
+                {
+                    "name": "x-auth-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwiaXNBZG1pbiI6dHJ1ZSwiaWQiOiI2NGJlNmU4YTBhODI4NThhNWY4MDMxOTIiLCJpYXQiOjE2OTAyMTkxNjN9.hHN5WQp0lOa9f4cOgycNeRK3HBBzIN9S6e6ATCZ1-iU"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\": \"title 1\",\n  \"description\": \"description 1\",\n  \"score\": 0,\n  \"category\": \"64be6df60a82858a5f80318a\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "0055ed7f-2c3b-4260-97c2-e3285f6c2691",
+            "colId": "f08fbb11-d531-4a34-8adc-28425fa35f29",
+            "containerId": "",
+            "name": "UpdateMovie",
+            "url": "localhost:9000/api/movies/64b91698ae104594658f948d",
+            "method": "PUT",
+            "sortNum": 30000,
+            "created": "2023-07-20T09:22:48.252Z",
+            "modified": "2023-07-20T11:13:00.748Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\": \"title 1\",\n  \"description\": \"description 1\",\n  \"score\": 3,\n  \"category\": \"64b91571ae104594658f9480\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "eaadc947-48fe-4d58-a59c-14f1be84564d",
+            "colId": "f08fbb11-d531-4a34-8adc-28425fa35f29",
+            "containerId": "",
+            "name": "DeleteMovie",
+            "url": "localhost:9000/api/movies/64b91698ae104594658f948d",
+            "method": "DELETE",
+            "sortNum": 40000,
+            "created": "2023-07-20T09:23:25.556Z",
+            "modified": "2023-07-24T11:43:38.267Z",
+            "headers": [
+                {
+                    "name": "x-auth-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwiaXNBZG1pbiI6dHJ1ZSwiaWQiOiI2NGJlNTZlY2JlOGExMjhlYzUxNjExYmUiLCJpYXQiOjE2OTAxOTg5OTh9.mjitQr6UTiBgwhVgKMwTEWW56Fi3Yi1hKoBivtvYluY "
+                }
+            ],
+            "params": [],
+            "tests": []
+        }
+    ]
+}

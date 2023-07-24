@@ -1,0 +1,109 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "categories",
+    "dateExported": "2023-07-24T17:58:50.534Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "7b2fdc5a-0475-4ec6-8fc8-f19cfb758818",
+            "colId": "c4e29d5b-a425-4da1-b357-64108159bf97",
+            "containerId": "",
+            "name": "AllCategories",
+            "url": "localhost:9000/api/categories/",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-07-20T07:30:34.936Z",
+            "modified": "2023-07-20T07:31:18.241Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "94c5f066-0331-4da0-a046-081295abd292",
+            "colId": "c4e29d5b-a425-4da1-b357-64108159bf97",
+            "containerId": "",
+            "name": "OneCategory",
+            "url": "localhost:9000/api/categories/64b8e3aa0d19fa0a7c607723",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2023-07-20T07:32:01.724Z",
+            "modified": "2023-07-20T07:35:39.496Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "863f42d3-e241-4696-accd-bf097716542d",
+            "colId": "c4e29d5b-a425-4da1-b357-64108159bf97",
+            "containerId": "",
+            "name": "CreateCategory",
+            "url": "localhost:9000/api/categories/",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2023-07-20T07:33:44.652Z",
+            "modified": "2023-07-24T12:29:50.552Z",
+            "headers": [
+                {
+                    "name": "x-auth-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwiaXNBZG1pbiI6dHJ1ZSwiaWQiOiI2NGJlNmU4YTBhODI4NThhNWY4MDMxOTIiLCJpYXQiOjE2OTAyMDE3Mzh9.LJb093IpUsQTpkwMwHGW7wB5Q3rGz7HmdbrxkRTPEN4 "
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\": \"Comedia\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "c29e9819-8633-48b9-9de4-1510df10e4fb",
+            "colId": "c4e29d5b-a425-4da1-b357-64108159bf97",
+            "containerId": "",
+            "name": "UpdateCategory",
+            "url": "localhost:9000/api/categories/64b91571ae104594658f9480",
+            "method": "PUT",
+            "sortNum": 30000,
+            "created": "2023-07-20T07:39:33.375Z",
+            "modified": "2023-07-20T12:36:05.684Z",
+            "headers": [
+                {
+                    "name": "x-auth-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InBlZHJvIiwiaWF0IjoxNjg5ODU2NTIwfQ.b7kZqzLkN-U6UJmSOoCTI7XXOrxrpqxmd6Zw3dI83m8 "
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\": \"Terror\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "07b7b723-e857-4117-b3ac-42631ea8cba6",
+            "colId": "c4e29d5b-a425-4da1-b357-64108159bf97",
+            "containerId": "",
+            "name": "DeleteCategory",
+            "url": "localhost:9000/api/categories/64b92db3bcedd897baf4e0d8",
+            "method": "DELETE",
+            "sortNum": 40000,
+            "created": "2023-07-20T07:40:31.764Z",
+            "modified": "2023-07-24T10:00:19.113Z",
+            "headers": [
+                {
+                    "name": "x-auth-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNhcmxvcyIsImlhdCI6MTY5MDE5Mjc2N30.hj04Z5CbdpdLT9SdArz2ZXNtmPZ6qLUhx7jxZrIq_yM"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\": \"Comedia\"\n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}

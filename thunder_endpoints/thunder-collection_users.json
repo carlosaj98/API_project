@@ -1,0 +1,47 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "users",
+    "dateExported": "2023-07-24T17:58:14.324Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "8b694e5f-dc36-4a50-9868-7e983d0b9741",
+            "colId": "ba21bccf-9ae0-46b7-bf19-2836e3766e98",
+            "containerId": "",
+            "name": "SignUp",
+            "url": "localhost:9000/api/users/signup",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2023-07-20T06:57:17.796Z",
+            "modified": "2023-07-24T12:28:58.494Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\": \"admin\",\n  \"password\": \"admin\",\n  \"isAdmin\": \"true\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "648bde73-cc2d-4239-958b-d3b81bf60299",
+            "colId": "ba21bccf-9ae0-46b7-bf19-2836e3766e98",
+            "containerId": "",
+            "name": "SignIn",
+            "url": "localhost:9000/api/users/signin",
+            "method": "POST",
+            "sortNum": 50000,
+            "created": "2023-07-20T06:58:56.742Z",
+            "modified": "2023-07-24T11:43:18.347Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\": \"admin\",\n  \"password\": \"admin\"\n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}

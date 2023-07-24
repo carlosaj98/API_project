@@ -1,0 +1,33 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "score",
+    "dateExported": "2023-07-24T17:59:05.693Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "fe4c93e8-bb05-4418-b671-9ea9908edab3",
+            "colId": "74aafc9b-32ba-4312-b214-fd2507787411",
+            "containerId": "",
+            "name": "UpdateScore",
+            "url": "localhost:9000/api/scores/64be6efc0a82858a5f803199",
+            "method": "PUT",
+            "sortNum": 10000,
+            "created": "2023-07-20T11:33:33.668Z",
+            "modified": "2023-07-24T17:31:26.657Z",
+            "headers": [
+                {
+                    "name": "x-auth-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwiaXNBZG1pbiI6dHJ1ZSwiaWQiOiI2NGJlNmU4YTBhODI4NThhNWY4MDMxOTIiLCJpYXQiOjE2OTAyMTkxNjN9.hHN5WQp0lOa9f4cOgycNeRK3HBBzIN9S6e6ATCZ1-iU"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"score\": 1\n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}
