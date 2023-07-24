@@ -46,7 +46,6 @@ router.delete(
 	'/:id',
 	isAuth,
 	isAdmin,
-	categoryValidationSchema,
 	validate,
 	CategoryControllers.deleteCategory
 )
