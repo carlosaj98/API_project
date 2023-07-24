@@ -12,7 +12,7 @@ const register = async (req, res) => {
 	const user = await User.create({ ...userDetails, password })
 
 	const token = jwt.sign(
-		{ username: user.username, isAdmin: user.isAdmin },
+		{ username: user.username, isAdmin: user.isAdmin, id: user.id },
 		process.env.jwtPrivateKey
 	)
 
@@ -31,7 +31,7 @@ const login = async (req, res) => {
 		return res.status(400).send('El usuario y contraseña no coincide')
 
 	const token = jwt.sign(
-		{ username: user.username, isAdmin: user.isAdmin },
+		{ username: user.username, isAdmin: user.isAdmin, id: user.id},
 		process.env.jwtPrivateKey
 	)
 

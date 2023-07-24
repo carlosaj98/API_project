@@ -59,7 +59,6 @@ router.delete(
 	'/:id',
 	isAuth,
 	isAdmin,
-	movieValidationSchema,
 	validate,
 	MovieControllers.deleteMovie
 )
